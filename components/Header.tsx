@@ -22,7 +22,7 @@ const Header = () => {
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <span className="text-white text-xl font-bold">Game Lobby</span>
+          <span className="text-white text-xl font-bold"> <Link href='/'>Game Lobby</Link></span>
           {headerItems?.map((menuItem: MenuItem) => (
             <Link key={menuItem.id} href={menuItem.path}>
               <a className="text-white">{menuItem.name}</a>

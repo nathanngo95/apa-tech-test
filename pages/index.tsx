@@ -55,7 +55,7 @@ const HomePage = () => {
             </div>
           ))
         ) : (
-          <span className="loading loading-infinity loading-lg"></span>
+          <span className="loading loading-dots loading-lg"></span>
         )}
       </main>
       <Footer />

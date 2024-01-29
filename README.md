@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Game Lobby App
+
+## Overview
+
+The Game Lobby App is a web application built with ReactJS and Next.js. It provides a user-friendly interface for browsing and searching games. Users can navigate through different game categories, view a list of games, and search for specific games.
+
+## Features
+
+- **Game Menu Lobby Categories Navigation**: Navigate through different game categories to find your favorite games easily.
+- **Games List**: View a list of games in each category, with details such as game title, cover image, and description.
+- **Games Search**: Search for specific games using keywords.
+- **Pagination**: Navigate through pages of game lists efficiently with pagination controls.
+- **Responsive Design**: The app is designed to be responsive and works well on various devices, including desktops and tablets.
+
+## Technologies Used
+
+- **ReactJS**: Frontend library for building user interfaces.
+- **Next.js**: React framework for server-side rendering and routing.
+- **TypeScript**: Typed superset of JavaScript for improved code quality and maintainability.
+- **Redux Toolkit**: State management library for managing application state.
+- **React Query**: Library for fetching, caching, and updating data in React applications. When you navigate between list game pages. If that page was called, react-query will return immidiately the list from cache
+- **Tailwind CSS**: Utility-first CSS framework for styling the UI.
+- **DaisyUI**: Component library for Tailwind CSS to add additional UI components and styles. This library is new to me and I decided to use this 1st time for this project.
+- **Jest**: Testing framework for writing unit and integration tests.
+- **React Testing Library**: Testing utilities for testing React components.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the Repository**
+2. **Install Dependencies:** npm install
+3. **Run the Development Server:** npm run dev -> The app will be running at http://localhost:3000.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Usage
+- Browse through different game categories using the navigation menu.
+- View a list of games in each category.
+- Use the search bar to find specific games by title or keyword.
+- Navigate through pages of game lists using pagination controls.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Testing
+Run the following command to execute tests: npm test
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Uncovered/ Need to improve
+I'm trying to set my self in the timebox of 8 hours (actually around 7 hours for coding/debuging/researching... and the remaining time to write this docs), I tried to bring as many as I can from the requirement. However, I still miss these things:
+- SSR: I planned to add this along with next/image since this is not too hard but I faced some trouble when trying to config the unit testing. Then I realised there was no time, so I skiped this.
+- Mobile Responsive: The pages look fine on desktop and tablet but a bit off on mobile, I think that's fine since I tried to focus on functionalities
+- More test cases: Yeah, I can write some more unit testing. To be honest, this is the first time I setup unit testing for Nextjs and got some issues on doing mock data for next/router (Good learn >_< )
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Thanks for having me in the technical test. Hope this find you well and we have a chance to go forward and talk more about these cool things. Enjoy the day!
